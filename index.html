@@ -84,16 +84,16 @@
     <div class="title active">
       <i class="dropdown icon"></i>
       
-        <strong>Verticals</strong>
+        <strong>Acquisitions</strong>
       
     </div>
     <div class="content active">
       <div class="ui fluid secondary vertical menu">
       
-        <a class="item green" href="#api-endpoints-verticals-get-%28public%29">
-          <i class="ui green empty circular label"></i>
+        <a class="item blue" href="#api-endpoints-acquisitions-enter-%28public%29">
+          <i class="ui blue empty circular label"></i>
           
-            <span>Get (PUBLIC)</span>
+            <span>Enter (PUBLIC)</span>
           
         </a>
       
@@ -164,6 +164,27 @@
     </div>
     
   
+    
+    <div class="title ">
+      <i class="dropdown icon"></i>
+      
+        <strong>Verticals</strong>
+      
+    </div>
+    <div class="content ">
+      <div class="ui fluid secondary vertical menu">
+      
+        <a class="item green" href="#api-endpoints-verticals-get-%28public%29">
+          <i class="ui green empty circular label"></i>
+          
+            <span>Get (PUBLIC)</span>
+          
+        </a>
+      
+      </div>
+    </div>
+    
+  
 </div>
 
 
@@ -196,11 +217,11 @@
       <div class="ui stacked segments">
         <div class="ui basic segment resource">
           <div class="ui purple huge ribbon label">
-            Verticals
+            Acquisitions
           </div>
           <div class="ui header">
             <div class="ui sub header">
-              <p>API endpoints for Verticals.</p>
+              <p>API endpoints for Acquisitions.</p>
 
             </div>
           </div>
@@ -215,10 +236,10 @@
 </div>
 
           <div class="ui basic segment">
-            <h3 class="ui block center aligned header" id="api-endpoints-verticals-get-(public)">
-              Get (PUBLIC)
+            <h3 class="ui block center aligned header" id="api-endpoints-acquisitions-enter-(public)">
+              Enter (PUBLIC)
             </h3>
-            <div class="description"><p>Returns the list of active verticals.</p>
+            <div class="description"><p>Saves user&rsquo;s competition (or promotion) entry in Telemetry.</p>
 </div>
 
             
@@ -227,15 +248,272 @@
               </h4>
               <div class="description"></div>
               <div class="fluid ui large labeled button">
-                <div class="ui green large button">
-                  <h3>GET</h3>
+                <div class="ui blue large button">
+                  <h3>POST</h3>
                 </div>
-                <a class="ui basic fluid green label">
-                  <code>/verticals</code>
+                <a class="ui basic fluid blue label">
+                  <code>/acquisitions/{id}/enter</code>
                 </a>
               </div>
               
+                <table class="ui celled definition table">
+                  <thead>
+                    <tr>
+                      <th colspan="4">Parameters</th>
+                    </tr>
+                  <thead>
+                  <tbody>
+                    
+                      
+  
+    <tr>
+      <td class="center aligned one wide">
+        <i class="ui empty circular label black" data-content="required" data-position="top center"></i>
+      </td>
+      <td><code>id</code></td>
+      <td class="center aligned">
+        <code>int</code>
+        
+        
+      </td>
+      <td class="eight wide">
+        <p>Acquisition&rsquo;s ID</p>
+
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td class="center aligned one wide">
+        <i class="ui empty circular label black" data-content="required" data-position="top center"></i>
+      </td>
+      <td><code>email</code></td>
+      <td class="center aligned">
+        <code>string</code>
+        
+        
+      </td>
+      <td class="eight wide">
+        <p>User&rsquo;s email  address</p>
+
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td class="center aligned one wide">
+        <i class="ui empty circular label grey" data-content="optional" data-position="top center"></i>
+      </td>
+      <td><code>firstname</code></td>
+      <td class="center aligned">
+        <code>string</code>
+        
+        
+      </td>
+      <td class="eight wide">
+        <p>User&rsquo;s first name</p>
+
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td class="center aligned one wide">
+        <i class="ui empty circular label grey" data-content="optional" data-position="top center"></i>
+      </td>
+      <td><code>lastname</code></td>
+      <td class="center aligned">
+        <code>string</code>
+        
+        
+      </td>
+      <td class="eight wide">
+        <p>User&rsquo;s last name</p>
+
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td class="center aligned one wide">
+        <i class="ui empty circular label grey" data-content="optional" data-position="top center"></i>
+      </td>
+      <td><code>addressLine1</code></td>
+      <td class="center aligned">
+        <code>string</code>
+        
+        
+      </td>
+      <td class="eight wide">
+        <p>User&rsquo;s address line 1</p>
+
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td class="center aligned one wide">
+        <i class="ui empty circular label grey" data-content="optional" data-position="top center"></i>
+      </td>
+      <td><code>addressLine2</code></td>
+      <td class="center aligned">
+        <code>string</code>
+        
+        
+      </td>
+      <td class="eight wide">
+        <p>User&rsquo;s address line 2</p>
+
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td class="center aligned one wide">
+        <i class="ui empty circular label grey" data-content="optional" data-position="top center"></i>
+      </td>
+      <td><code>city</code></td>
+      <td class="center aligned">
+        <code>string</code>
+        
+        
+      </td>
+      <td class="eight wide">
+        <p>User&rsquo;s city</p>
+
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td class="center aligned one wide">
+        <i class="ui empty circular label grey" data-content="optional" data-position="top center"></i>
+      </td>
+      <td><code>postcode</code></td>
+      <td class="center aligned">
+        <code>string</code>
+        
+        
+      </td>
+      <td class="eight wide">
+        <p>User&rsquo;s postal code</p>
+
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td class="center aligned one wide">
+        <i class="ui empty circular label grey" data-content="optional" data-position="top center"></i>
+      </td>
+      <td><code>telephone</code></td>
+      <td class="center aligned">
+        <code>string</code>
+        
+        
+      </td>
+      <td class="eight wide">
+        <p>User&rsquo;s telephone</p>
+
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td class="center aligned one wide">
+        <i class="ui empty circular label grey" data-content="optional" data-position="top center"></i>
+      </td>
+      <td><code>answerId</code></td>
+      <td class="center aligned">
+        <code>int</code>
+        
+        
+      </td>
+      <td class="eight wide">
+        <p>Answer Id (required for promotion entries)</p>
+
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td class="center aligned one wide">
+        <i class="ui empty circular label grey" data-content="optional" data-position="top center"></i>
+      </td>
+      <td><code>optins</code></td>
+      <td class="center aligned">
+        <code>array</code>
+        
+        
+      </td>
+      <td class="eight wide">
+        <p>Array of 3rd party opt-in IDs</p>
+
+        
+      </td>
+    </tr>
+  
+
+                    
+                    
+                  </tbody>
+                </table>
               
+              
+                
+<table class="ui celled definition table">
+  <thead>
+    <tr>
+      <th colspan="2">Headers</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+    <tr>
+      <td class="four wide">Content-Type</td>
+      <td><code>application/json</code></td>
+    </tr>
+  
+  </tbody>
+</table>
+
+              
+              
+                <div class="ui stacked segment">
+                  <div class="ui fluid transaction accordion">
+                    <div class="title">
+                      <code>application/json</code>
+                    </div>
+                    <div class="content tabbed">
+                      <div class="ui top attached tabular menu">
+                        <a data-tab="body" class="active item">BODY</a>
+                        <a data-tab="schema" class="item">SCHEMA</a>
+                      </div>
+                      <div class="ui bottom attached active tab segment" data-tab="body">
+                        <pre style="white-space: inherit">
+                          <code class="language-json">{
+    &#34;email&#34;:&#34;michaeljordan@gmail.com&#34;,
+    &#34;firstname&#34;:&#34;Michael&#34;,
+    &#34;lastname&#34;:&#34;Jordan&#34;,
+    &#34;addressLine1&#34;:&#34;X House Name&#34;,
+    &#34;addressLine2&#34;:&#34;Street Name&#34;,
+    &#34;city&#34;:&#34;City&#34;,
+    &#34;postcode&#34;:&#34;Postcode&#34;,
+    &#34;telephone&#34;:&#34;001122334455&#34;,
+    &#34;answerId&#34;:1,
+    &#34;optins&#34;:[1,2]
+}
+</code>
+                        </pre>
+                      </div>
+                      <div class="ui bottom attached tab segment" data-tab="schema">
+                        <pre style="white-space: inherit">
+                          <code class="language-json"></code>
+                        </pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               
 
               <h4 class="ui horizontal divider">RESPONSE</h4>
@@ -274,21 +552,976 @@
                       <pre style="white-space: inherit">
                         <code class="language-json">{
     &#34;status&#34;:200,
-    &#34;data&#34;:
-        [
-            {
-                &#34;id&#34;:1,
-                &#34;team_id&#34;:1,
-                &#34;name&#34;:&#34;Test Vertical 1&#34;,
-                &#34;shortcode&#34;:&#34;TV1&#34;
-            },
-            {
-                &#34;id&#34;:2,
-                &#34;team_id&#34;:1,
-                &#34;name&#34;:&#34;Test Vertical 2&#34;,
-                &#34;shortcode&#34;:&#34;TV2&#34;
-            }
-        ]
+    &#34;data&#34;:&#34;OK&#34;
+}
+</code>
+                      </pre>
+                    </div>
+                    <div class="ui bottom attached tab segment" data-tab="schema">
+                      <pre style="white-space: inherit">
+                        <code class="language-json"></code>
+                      </pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <h4 class="ui horizontal divider">
+                REQUEST
+              </h4>
+              <div class="description"></div>
+              <div class="fluid ui large labeled button">
+                <div class="ui blue large button">
+                  <h3>POST</h3>
+                </div>
+                <a class="ui basic fluid blue label">
+                  <code>/acquisitions/{id}/enter</code>
+                </a>
+              </div>
+              
+                <table class="ui celled definition table">
+                  <thead>
+                    <tr>
+                      <th colspan="4">Parameters</th>
+                    </tr>
+                  <thead>
+                  <tbody>
+                    
+                      
+  
+    <tr>
+      <td class="center aligned one wide">
+        <i class="ui empty circular label black" data-content="required" data-position="top center"></i>
+      </td>
+      <td><code>id</code></td>
+      <td class="center aligned">
+        <code>int</code>
+        
+        
+      </td>
+      <td class="eight wide">
+        <p>Acquisition&rsquo;s ID</p>
+
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td class="center aligned one wide">
+        <i class="ui empty circular label black" data-content="required" data-position="top center"></i>
+      </td>
+      <td><code>email</code></td>
+      <td class="center aligned">
+        <code>string</code>
+        
+        
+      </td>
+      <td class="eight wide">
+        <p>User&rsquo;s email  address</p>
+
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td class="center aligned one wide">
+        <i class="ui empty circular label grey" data-content="optional" data-position="top center"></i>
+      </td>
+      <td><code>firstname</code></td>
+      <td class="center aligned">
+        <code>string</code>
+        
+        
+      </td>
+      <td class="eight wide">
+        <p>User&rsquo;s first name</p>
+
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td class="center aligned one wide">
+        <i class="ui empty circular label grey" data-content="optional" data-position="top center"></i>
+      </td>
+      <td><code>lastname</code></td>
+      <td class="center aligned">
+        <code>string</code>
+        
+        
+      </td>
+      <td class="eight wide">
+        <p>User&rsquo;s last name</p>
+
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td class="center aligned one wide">
+        <i class="ui empty circular label grey" data-content="optional" data-position="top center"></i>
+      </td>
+      <td><code>addressLine1</code></td>
+      <td class="center aligned">
+        <code>string</code>
+        
+        
+      </td>
+      <td class="eight wide">
+        <p>User&rsquo;s address line 1</p>
+
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td class="center aligned one wide">
+        <i class="ui empty circular label grey" data-content="optional" data-position="top center"></i>
+      </td>
+      <td><code>addressLine2</code></td>
+      <td class="center aligned">
+        <code>string</code>
+        
+        
+      </td>
+      <td class="eight wide">
+        <p>User&rsquo;s address line 2</p>
+
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td class="center aligned one wide">
+        <i class="ui empty circular label grey" data-content="optional" data-position="top center"></i>
+      </td>
+      <td><code>city</code></td>
+      <td class="center aligned">
+        <code>string</code>
+        
+        
+      </td>
+      <td class="eight wide">
+        <p>User&rsquo;s city</p>
+
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td class="center aligned one wide">
+        <i class="ui empty circular label grey" data-content="optional" data-position="top center"></i>
+      </td>
+      <td><code>postcode</code></td>
+      <td class="center aligned">
+        <code>string</code>
+        
+        
+      </td>
+      <td class="eight wide">
+        <p>User&rsquo;s postal code</p>
+
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td class="center aligned one wide">
+        <i class="ui empty circular label grey" data-content="optional" data-position="top center"></i>
+      </td>
+      <td><code>telephone</code></td>
+      <td class="center aligned">
+        <code>string</code>
+        
+        
+      </td>
+      <td class="eight wide">
+        <p>User&rsquo;s telephone</p>
+
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td class="center aligned one wide">
+        <i class="ui empty circular label grey" data-content="optional" data-position="top center"></i>
+      </td>
+      <td><code>answerId</code></td>
+      <td class="center aligned">
+        <code>int</code>
+        
+        
+      </td>
+      <td class="eight wide">
+        <p>Answer Id (required for promotion entries)</p>
+
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td class="center aligned one wide">
+        <i class="ui empty circular label grey" data-content="optional" data-position="top center"></i>
+      </td>
+      <td><code>optins</code></td>
+      <td class="center aligned">
+        <code>array</code>
+        
+        
+      </td>
+      <td class="eight wide">
+        <p>Array of 3rd party opt-in IDs</p>
+
+        
+      </td>
+    </tr>
+  
+
+                    
+                    
+                  </tbody>
+                </table>
+              
+              
+                
+<table class="ui celled definition table">
+  <thead>
+    <tr>
+      <th colspan="2">Headers</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+    <tr>
+      <td class="four wide">Content-Type</td>
+      <td><code>application/json</code></td>
+    </tr>
+  
+  </tbody>
+</table>
+
+              
+              
+                <div class="ui stacked segment">
+                  <div class="ui fluid transaction accordion">
+                    <div class="title">
+                      <code>application/json</code>
+                    </div>
+                    <div class="content tabbed">
+                      <div class="ui top attached tabular menu">
+                        <a data-tab="body" class="active item">BODY</a>
+                        <a data-tab="schema" class="item">SCHEMA</a>
+                      </div>
+                      <div class="ui bottom attached active tab segment" data-tab="body">
+                        <pre style="white-space: inherit">
+                          <code class="language-json">{
+    &#34;email&#34;:&#34;michaeljordan@gmail.com&#34;,
+    &#34;firstname&#34;:&#34;Michael&#34;,
+    &#34;lastname&#34;:&#34;Jordan&#34;,
+    &#34;addressLine1&#34;:&#34;X House Name&#34;,
+    &#34;addressLine2&#34;:&#34;Street Name&#34;,
+    &#34;city&#34;:&#34;City&#34;,
+    &#34;postcode&#34;:&#34;Postcode&#34;,
+    &#34;telephone&#34;:&#34;001122334455&#34;,
+    &#34;answerId&#34;:1,
+    &#34;optins&#34;:[1,2]
+}
+</code>
+                        </pre>
+                      </div>
+                      <div class="ui bottom attached tab segment" data-tab="schema">
+                        <pre style="white-space: inherit">
+                          <code class="language-json"></code>
+                        </pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
+
+              <h4 class="ui horizontal divider">RESPONSE</h4>
+              <div class="description"></div>
+              
+<table class="ui celled definition table">
+  <thead>
+    <tr>
+      <th colspan="2">Headers</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+    <tr>
+      <td class="four wide">Content-Type</td>
+      <td><code>application/json</code></td>
+    </tr>
+  
+  </tbody>
+</table>
+
+              <div class="ui stacked  segment">
+                <div class="ui fluid transaction accordion">
+                  <div class="title center aligned">
+                    <a class="ui  circular label">
+                      400
+                    </a>
+                    <code>application/json</code>
+                  </div>
+                  <div class="content tabbed">
+                    <div class="ui top attached tabular menu">
+                      <a data-tab="body" class="active item">BODY</a>
+                      <a data-tab="schema" class="item">SCHEMA</a>
+                    </div>
+                    <div class="ui bottom attached active tab segment" data-tab="body">
+                      <pre style="white-space: inherit">
+                        <code class="language-json">{
+    &#34;status&#34;:400,
+    &#34;message&#34;:&#34;Validation failed.&#34;
+}
+</code>
+                      </pre>
+                    </div>
+                    <div class="ui bottom attached tab segment" data-tab="schema">
+                      <pre style="white-space: inherit">
+                        <code class="language-json"></code>
+                      </pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <h4 class="ui horizontal divider">
+                REQUEST
+              </h4>
+              <div class="description"></div>
+              <div class="fluid ui large labeled button">
+                <div class="ui blue large button">
+                  <h3>POST</h3>
+                </div>
+                <a class="ui basic fluid blue label">
+                  <code>/acquisitions/{id}/enter</code>
+                </a>
+              </div>
+              
+                <table class="ui celled definition table">
+                  <thead>
+                    <tr>
+                      <th colspan="4">Parameters</th>
+                    </tr>
+                  <thead>
+                  <tbody>
+                    
+                      
+  
+    <tr>
+      <td class="center aligned one wide">
+        <i class="ui empty circular label black" data-content="required" data-position="top center"></i>
+      </td>
+      <td><code>id</code></td>
+      <td class="center aligned">
+        <code>int</code>
+        
+        
+      </td>
+      <td class="eight wide">
+        <p>Acquisition&rsquo;s ID</p>
+
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td class="center aligned one wide">
+        <i class="ui empty circular label black" data-content="required" data-position="top center"></i>
+      </td>
+      <td><code>email</code></td>
+      <td class="center aligned">
+        <code>string</code>
+        
+        
+      </td>
+      <td class="eight wide">
+        <p>User&rsquo;s email  address</p>
+
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td class="center aligned one wide">
+        <i class="ui empty circular label grey" data-content="optional" data-position="top center"></i>
+      </td>
+      <td><code>firstname</code></td>
+      <td class="center aligned">
+        <code>string</code>
+        
+        
+      </td>
+      <td class="eight wide">
+        <p>User&rsquo;s first name</p>
+
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td class="center aligned one wide">
+        <i class="ui empty circular label grey" data-content="optional" data-position="top center"></i>
+      </td>
+      <td><code>lastname</code></td>
+      <td class="center aligned">
+        <code>string</code>
+        
+        
+      </td>
+      <td class="eight wide">
+        <p>User&rsquo;s last name</p>
+
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td class="center aligned one wide">
+        <i class="ui empty circular label grey" data-content="optional" data-position="top center"></i>
+      </td>
+      <td><code>addressLine1</code></td>
+      <td class="center aligned">
+        <code>string</code>
+        
+        
+      </td>
+      <td class="eight wide">
+        <p>User&rsquo;s address line 1</p>
+
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td class="center aligned one wide">
+        <i class="ui empty circular label grey" data-content="optional" data-position="top center"></i>
+      </td>
+      <td><code>addressLine2</code></td>
+      <td class="center aligned">
+        <code>string</code>
+        
+        
+      </td>
+      <td class="eight wide">
+        <p>User&rsquo;s address line 2</p>
+
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td class="center aligned one wide">
+        <i class="ui empty circular label grey" data-content="optional" data-position="top center"></i>
+      </td>
+      <td><code>city</code></td>
+      <td class="center aligned">
+        <code>string</code>
+        
+        
+      </td>
+      <td class="eight wide">
+        <p>User&rsquo;s city</p>
+
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td class="center aligned one wide">
+        <i class="ui empty circular label grey" data-content="optional" data-position="top center"></i>
+      </td>
+      <td><code>postcode</code></td>
+      <td class="center aligned">
+        <code>string</code>
+        
+        
+      </td>
+      <td class="eight wide">
+        <p>User&rsquo;s postal code</p>
+
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td class="center aligned one wide">
+        <i class="ui empty circular label grey" data-content="optional" data-position="top center"></i>
+      </td>
+      <td><code>telephone</code></td>
+      <td class="center aligned">
+        <code>string</code>
+        
+        
+      </td>
+      <td class="eight wide">
+        <p>User&rsquo;s telephone</p>
+
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td class="center aligned one wide">
+        <i class="ui empty circular label grey" data-content="optional" data-position="top center"></i>
+      </td>
+      <td><code>answerId</code></td>
+      <td class="center aligned">
+        <code>int</code>
+        
+        
+      </td>
+      <td class="eight wide">
+        <p>Answer Id (required for promotion entries)</p>
+
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td class="center aligned one wide">
+        <i class="ui empty circular label grey" data-content="optional" data-position="top center"></i>
+      </td>
+      <td><code>optins</code></td>
+      <td class="center aligned">
+        <code>array</code>
+        
+        
+      </td>
+      <td class="eight wide">
+        <p>Array of 3rd party opt-in IDs</p>
+
+        
+      </td>
+    </tr>
+  
+
+                    
+                    
+                  </tbody>
+                </table>
+              
+              
+                
+<table class="ui celled definition table">
+  <thead>
+    <tr>
+      <th colspan="2">Headers</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+    <tr>
+      <td class="four wide">Content-Type</td>
+      <td><code>application/json</code></td>
+    </tr>
+  
+  </tbody>
+</table>
+
+              
+              
+                <div class="ui stacked segment">
+                  <div class="ui fluid transaction accordion">
+                    <div class="title">
+                      <code>application/json</code>
+                    </div>
+                    <div class="content tabbed">
+                      <div class="ui top attached tabular menu">
+                        <a data-tab="body" class="active item">BODY</a>
+                        <a data-tab="schema" class="item">SCHEMA</a>
+                      </div>
+                      <div class="ui bottom attached active tab segment" data-tab="body">
+                        <pre style="white-space: inherit">
+                          <code class="language-json">{
+    &#34;email&#34;:&#34;michaeljordan@gmail.com&#34;,
+    &#34;firstname&#34;:&#34;Michael&#34;,
+    &#34;lastname&#34;:&#34;Jordan&#34;,
+    &#34;addressLine1&#34;:&#34;X House Name&#34;,
+    &#34;addressLine2&#34;:&#34;Street Name&#34;,
+    &#34;city&#34;:&#34;City&#34;,
+    &#34;postcode&#34;:&#34;Postcode&#34;,
+    &#34;telephone&#34;:&#34;001122334455&#34;,
+    &#34;answerId&#34;:1,
+    &#34;optins&#34;:[1,2]
+}
+</code>
+                        </pre>
+                      </div>
+                      <div class="ui bottom attached tab segment" data-tab="schema">
+                        <pre style="white-space: inherit">
+                          <code class="language-json"></code>
+                        </pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
+
+              <h4 class="ui horizontal divider">RESPONSE</h4>
+              <div class="description"></div>
+              
+<table class="ui celled definition table">
+  <thead>
+    <tr>
+      <th colspan="2">Headers</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+    <tr>
+      <td class="four wide">Content-Type</td>
+      <td><code>application/json</code></td>
+    </tr>
+  
+  </tbody>
+</table>
+
+              <div class="ui stacked orange segment">
+                <div class="ui fluid transaction accordion">
+                  <div class="title center aligned">
+                    <a class="ui orange circular label">
+                      403
+                    </a>
+                    <code>application/json</code>
+                  </div>
+                  <div class="content tabbed">
+                    <div class="ui top attached tabular menu">
+                      <a data-tab="body" class="active item">BODY</a>
+                      <a data-tab="schema" class="item">SCHEMA</a>
+                    </div>
+                    <div class="ui bottom attached active tab segment" data-tab="body">
+                      <pre style="white-space: inherit">
+                        <code class="language-json">{
+    &#34;status&#34;:403,
+    &#34;message&#34;:&#34;Not registered.&#34;
+}        
+</code>
+                      </pre>
+                    </div>
+                    <div class="ui bottom attached tab segment" data-tab="schema">
+                      <pre style="white-space: inherit">
+                        <code class="language-json"></code>
+                      </pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <h4 class="ui horizontal divider">
+                REQUEST
+              </h4>
+              <div class="description"></div>
+              <div class="fluid ui large labeled button">
+                <div class="ui blue large button">
+                  <h3>POST</h3>
+                </div>
+                <a class="ui basic fluid blue label">
+                  <code>/acquisitions/{id}/enter</code>
+                </a>
+              </div>
+              
+                <table class="ui celled definition table">
+                  <thead>
+                    <tr>
+                      <th colspan="4">Parameters</th>
+                    </tr>
+                  <thead>
+                  <tbody>
+                    
+                      
+  
+    <tr>
+      <td class="center aligned one wide">
+        <i class="ui empty circular label black" data-content="required" data-position="top center"></i>
+      </td>
+      <td><code>id</code></td>
+      <td class="center aligned">
+        <code>int</code>
+        
+        
+      </td>
+      <td class="eight wide">
+        <p>Acquisition&rsquo;s ID</p>
+
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td class="center aligned one wide">
+        <i class="ui empty circular label black" data-content="required" data-position="top center"></i>
+      </td>
+      <td><code>email</code></td>
+      <td class="center aligned">
+        <code>string</code>
+        
+        
+      </td>
+      <td class="eight wide">
+        <p>User&rsquo;s email  address</p>
+
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td class="center aligned one wide">
+        <i class="ui empty circular label grey" data-content="optional" data-position="top center"></i>
+      </td>
+      <td><code>firstname</code></td>
+      <td class="center aligned">
+        <code>string</code>
+        
+        
+      </td>
+      <td class="eight wide">
+        <p>User&rsquo;s first name</p>
+
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td class="center aligned one wide">
+        <i class="ui empty circular label grey" data-content="optional" data-position="top center"></i>
+      </td>
+      <td><code>lastname</code></td>
+      <td class="center aligned">
+        <code>string</code>
+        
+        
+      </td>
+      <td class="eight wide">
+        <p>User&rsquo;s last name</p>
+
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td class="center aligned one wide">
+        <i class="ui empty circular label grey" data-content="optional" data-position="top center"></i>
+      </td>
+      <td><code>addressLine1</code></td>
+      <td class="center aligned">
+        <code>string</code>
+        
+        
+      </td>
+      <td class="eight wide">
+        <p>User&rsquo;s address line 1</p>
+
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td class="center aligned one wide">
+        <i class="ui empty circular label grey" data-content="optional" data-position="top center"></i>
+      </td>
+      <td><code>addressLine2</code></td>
+      <td class="center aligned">
+        <code>string</code>
+        
+        
+      </td>
+      <td class="eight wide">
+        <p>User&rsquo;s address line 2</p>
+
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td class="center aligned one wide">
+        <i class="ui empty circular label grey" data-content="optional" data-position="top center"></i>
+      </td>
+      <td><code>city</code></td>
+      <td class="center aligned">
+        <code>string</code>
+        
+        
+      </td>
+      <td class="eight wide">
+        <p>User&rsquo;s city</p>
+
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td class="center aligned one wide">
+        <i class="ui empty circular label grey" data-content="optional" data-position="top center"></i>
+      </td>
+      <td><code>postcode</code></td>
+      <td class="center aligned">
+        <code>string</code>
+        
+        
+      </td>
+      <td class="eight wide">
+        <p>User&rsquo;s postal code</p>
+
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td class="center aligned one wide">
+        <i class="ui empty circular label grey" data-content="optional" data-position="top center"></i>
+      </td>
+      <td><code>telephone</code></td>
+      <td class="center aligned">
+        <code>string</code>
+        
+        
+      </td>
+      <td class="eight wide">
+        <p>User&rsquo;s telephone</p>
+
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td class="center aligned one wide">
+        <i class="ui empty circular label grey" data-content="optional" data-position="top center"></i>
+      </td>
+      <td><code>answerId</code></td>
+      <td class="center aligned">
+        <code>int</code>
+        
+        
+      </td>
+      <td class="eight wide">
+        <p>Answer Id (required for promotion entries)</p>
+
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td class="center aligned one wide">
+        <i class="ui empty circular label grey" data-content="optional" data-position="top center"></i>
+      </td>
+      <td><code>optins</code></td>
+      <td class="center aligned">
+        <code>array</code>
+        
+        
+      </td>
+      <td class="eight wide">
+        <p>Array of 3rd party opt-in IDs</p>
+
+        
+      </td>
+    </tr>
+  
+
+                    
+                    
+                  </tbody>
+                </table>
+              
+              
+                
+<table class="ui celled definition table">
+  <thead>
+    <tr>
+      <th colspan="2">Headers</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+    <tr>
+      <td class="four wide">Content-Type</td>
+      <td><code>application/json</code></td>
+    </tr>
+  
+  </tbody>
+</table>
+
+              
+              
+                <div class="ui stacked segment">
+                  <div class="ui fluid transaction accordion">
+                    <div class="title">
+                      <code>application/json</code>
+                    </div>
+                    <div class="content tabbed">
+                      <div class="ui top attached tabular menu">
+                        <a data-tab="body" class="active item">BODY</a>
+                        <a data-tab="schema" class="item">SCHEMA</a>
+                      </div>
+                      <div class="ui bottom attached active tab segment" data-tab="body">
+                        <pre style="white-space: inherit">
+                          <code class="language-json">{
+    &#34;email&#34;:&#34;michaeljordan@gmail.com&#34;,
+    &#34;firstname&#34;:&#34;Michael&#34;,
+    &#34;lastname&#34;:&#34;Jordan&#34;,
+    &#34;addressLine1&#34;:&#34;X House Name&#34;,
+    &#34;addressLine2&#34;:&#34;Street Name&#34;,
+    &#34;city&#34;:&#34;City&#34;,
+    &#34;postcode&#34;:&#34;Postcode&#34;,
+    &#34;telephone&#34;:&#34;001122334455&#34;,
+    &#34;answerId&#34;:1,
+    &#34;optins&#34;:[1,2]
+}
+</code>
+                        </pre>
+                      </div>
+                      <div class="ui bottom attached tab segment" data-tab="schema">
+                        <pre style="white-space: inherit">
+                          <code class="language-json"></code>
+                        </pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
+
+              <h4 class="ui horizontal divider">RESPONSE</h4>
+              <div class="description"></div>
+              
+<table class="ui celled definition table">
+  <thead>
+    <tr>
+      <th colspan="2">Headers</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+    <tr>
+      <td class="four wide">Content-Type</td>
+      <td><code>application/json</code></td>
+    </tr>
+  
+  </tbody>
+</table>
+
+              <div class="ui stacked orange segment">
+                <div class="ui fluid transaction accordion">
+                  <div class="title center aligned">
+                    <a class="ui orange circular label">
+                      404
+                    </a>
+                    <code>application/json</code>
+                  </div>
+                  <div class="content tabbed">
+                    <div class="ui top attached tabular menu">
+                      <a data-tab="body" class="active item">BODY</a>
+                      <a data-tab="schema" class="item">SCHEMA</a>
+                    </div>
+                    <div class="ui bottom attached active tab segment" data-tab="body">
+                      <pre style="white-space: inherit">
+                        <code class="language-json">{
+    &#34;status&#34;:404,
+    &#34;message&#34;:&#34;Acquisition not found.&#34;
 }
 </code>
                       </pre>
@@ -2728,6 +3961,122 @@
     &#34;status&#34;:409,
     &#34;message&#34;:&#34;User already registered.&#34;
 }
+</code>
+                      </pre>
+                    </div>
+                    <div class="ui bottom attached tab segment" data-tab="schema">
+                      <pre style="white-space: inherit">
+                        <code class="language-json"></code>
+                      </pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+          </div>
+        
+        </div>
+      <div class="ui hidden divider"></div>
+    
+  
+    
+      <div class="ui stacked segments">
+        <div class="ui basic segment resource">
+          <div class="ui purple huge ribbon label">
+            Verticals
+          </div>
+          <div class="ui header">
+            <div class="ui sub header">
+              <p>API endpoints for Verticals.</p>
+
+            </div>
+          </div>
+        </div>
+
+        
+          
+<div class="ui grey horizontal small divider header">
+  <i class="ui grey micro circular label"></i>
+  <i class="ui pink micro circular label"></i>
+  <i class="ui grey micro circular label"></i>
+</div>
+
+          <div class="ui basic segment">
+            <h3 class="ui block center aligned header" id="api-endpoints-verticals-get-(public)">
+              Get (PUBLIC)
+            </h3>
+            <div class="description"><p>Returns the list of active verticals.</p>
+</div>
+
+            
+              <h4 class="ui horizontal divider">
+                REQUEST
+              </h4>
+              <div class="description"></div>
+              <div class="fluid ui large labeled button">
+                <div class="ui green large button">
+                  <h3>GET</h3>
+                </div>
+                <a class="ui basic fluid green label">
+                  <code>/verticals</code>
+                </a>
+              </div>
+              
+              
+              
+
+              <h4 class="ui horizontal divider">RESPONSE</h4>
+              <div class="description"></div>
+              
+<table class="ui celled definition table">
+  <thead>
+    <tr>
+      <th colspan="2">Headers</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+    <tr>
+      <td class="four wide">Content-Type</td>
+      <td><code>application/json</code></td>
+    </tr>
+  
+  </tbody>
+</table>
+
+              <div class="ui stacked blue segment">
+                <div class="ui fluid transaction accordion">
+                  <div class="title center aligned">
+                    <a class="ui blue circular label">
+                      200
+                    </a>
+                    <code>application/json</code>
+                  </div>
+                  <div class="content tabbed">
+                    <div class="ui top attached tabular menu">
+                      <a data-tab="body" class="active item">BODY</a>
+                      <a data-tab="schema" class="item">SCHEMA</a>
+                    </div>
+                    <div class="ui bottom attached active tab segment" data-tab="body">
+                      <pre style="white-space: inherit">
+                        <code class="language-json">{
+    &#34;status&#34;:200,
+    &#34;data&#34;:
+        [
+            {
+                &#34;id&#34;:1,
+                &#34;team_id&#34;:1,
+                &#34;name&#34;:&#34;Test Vertical 1&#34;,
+                &#34;shortcode&#34;:&#34;TV1&#34;
+            },
+            {
+                &#34;id&#34;:2,
+                &#34;team_id&#34;:1,
+                &#34;name&#34;:&#34;Test Vertical 2&#34;,
+                &#34;shortcode&#34;:&#34;TV2&#34;
+            }
+        ]
+}    
 </code>
                       </pre>
                     </div>
